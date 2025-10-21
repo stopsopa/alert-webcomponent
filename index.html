@@ -14,6 +14,20 @@
         line-height: 1.6;
         color: #24292f;
       }
+      h1, h2, h3 {
+        position: relative;
+      }
+      .header-link {
+        position: absolute;
+        left: -25px;
+        opacity: 0.7;
+        text-decoration: none;
+        color: #24292f;
+        transition: opacity 0.2s;
+      }
+      .header-link:hover {
+        opacity: 1;
+      }
       h1 {
         border-bottom: 2px solid #d0d7de;
         padding-bottom: 10px;
@@ -91,6 +105,37 @@
         fill: currentColor;
       }
     </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+        headers.forEach((header, index) => {
+          // Generate a unique id if not already present
+          if (!header.id) {
+            header.id = `header-${index + 1}`;
+          }
+
+          // Create a link icon
+          const linkIcon = document.createElement('a');
+          linkIcon.href = `#${header.id}`;
+          linkIcon.classList.add('header-link');
+          linkIcon.textContent = '🔗';
+          linkIcon.title = 'Copy link to this section';
+
+          // Add click event to copy link to clipboard
+          linkIcon.addEventListener('click', (e) => {
+            e.preventDefault();
+            const url = new URL(window.location.href);
+            url.hash = header.id;
+            navigator.clipboard.writeText(url.toString()).then(() => {
+              alert('Section link copied to clipboard!');
+            });
+          });
+
+          // Prepend the link to the header
+          header.insertBefore(linkIcon, header.firstChild);
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="github-ribbon">
@@ -480,21 +525,6 @@
       </li>
     </ul>
 
-    <!-- <script>
-      document.addEventListener("ace-onload", (event) => {
-        console.log("trigger");
-        // TypeScript notation showing what's available in event.detail:
-        // event.detail: {
-        //   component: HTMLElement,  // The <ace-editor> web component element
-        //   editor: AceEditor,       // The native Ace Editor instance (same as component.getEditor())
-        //   id: string               // The ID of the editor (auto-generated or user-provided)
-        // }
-        setTimeout(() => {
-          console.log("wrap", event.detail.editor);
-          event.detail.editor.setOption("wrap", true);
-        }, 2000);
-      });
-    </script> -->
     <script
       src="http://localhost:3000/ace-web-component.js"
       data-main-ace="https://stopsopa.github.io/noprettier/ace/ace-builds-1.15.0/src-min-noconflict/ace.js"
