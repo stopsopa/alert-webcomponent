@@ -181,11 +181,9 @@
         }
 
         headers.forEach((header) => {
-          // Generate a unique id if not already present
-          if (!header.id) {
-            const text = header.textContent.trim();
-            header.id = generateId(text);
-          }
+          // Always generate a new ID based on header text
+          const text = header.textContent.trim();
+          header.id = generateId(text);
 
           // Create a link icon
           const linkIcon = document.createElement('a');
