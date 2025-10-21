@@ -14,7 +14,9 @@
         line-height: 1.6;
         color: #24292f;
       }
-      h1, h2, h3 {
+      h1,
+      h2,
+      h3 {
         position: relative;
       }
       .header-link {
@@ -138,33 +140,33 @@
       }
     </style>
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
+      document.addEventListener("DOMContentLoaded", () => {
         // Create toast element
-        const toast = document.createElement('div');
-        toast.id = 'link-toast';
-        toast.textContent = 'Section link copied!';
+        const toast = document.createElement("div");
+        toast.id = "link-toast";
+        toast.textContent = "Section link copied!";
         document.body.appendChild(toast);
 
         // Function to show toast
         const showToast = () => {
-          toast.classList.add('show');
+          toast.classList.add("show");
           setTimeout(() => {
-            toast.classList.remove('show');
+            toast.classList.remove("show");
           }, 2000);
         };
 
-        const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+        const headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
         const usedIds = new Set();
 
         function generateId(text) {
           // Convert to lowercase, remove non-alphanumeric characters
           let id = text
             .toLowerCase()
-            .replace(/[^a-z0-9\s-]/g, '')
+            .replace(/[^a-z0-9\s-]/g, "")
             // Replace spaces with hyphens
-            .replace(/\s+/g, '-')
+            .replace(/\s+/g, "-")
             // Trim leading/trailing hyphens
-            .replace(/^-+|-+$/g, '')
+            .replace(/^-+|-+$/g, "")
             // Limit length
             .substring(0, 40);
 
@@ -186,14 +188,14 @@
           header.id = generateId(text);
 
           // Create a link icon
-          const linkIcon = document.createElement('a');
+          const linkIcon = document.createElement("a");
           linkIcon.href = `#${header.id}`;
-          linkIcon.classList.add('header-link');
-          linkIcon.textContent = '🔗';
-          linkIcon.title = 'Copy link to this section';
+          linkIcon.classList.add("header-link");
+          linkIcon.textContent = "🔗";
+          linkIcon.title = "Copy link to this section";
 
           // Add click event to copy link to clipboard
-          linkIcon.addEventListener('click', (e) => {
+          linkIcon.addEventListener("click", (e) => {
             e.preventDefault();
             const url = new URL(window.location.href);
             url.hash = header.id;
@@ -419,8 +421,6 @@
         Override the default label to suit your specific context.
       </alert-box>
 
-      <hr />
-
       <alert-box type="warning" data-oneline alert="Security Alert">
         A custom label that precisely describes the nature of the alert.
       </alert-box>
@@ -527,8 +527,9 @@
         Default: false (multi-line layout)
       </li>
       <li>
-        <code>alert</code> (string): Custom override for the default label.
-        When specified, replaces the standard type label. Default: uses type's default label
+        <code>alert</code> (string): Custom override for the default label. When
+        specified, replaces the standard type label. Default: uses type's
+        default label
       </li>
     </ul>
 
