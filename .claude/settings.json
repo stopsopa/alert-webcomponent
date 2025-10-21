@@ -1,7 +1,9 @@
 {
   "bashPermissions": {
     "allowedCommands": [
-      "git commit:*"
+      "git commit:*",
+      "git log:*",
+      "git diff:*"
     ]
   }
 }
