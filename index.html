@@ -129,119 +129,125 @@
       <h3>Default Layout (Multi-line)</h3>
       <p>Message appears below the label - perfect for longer content:</p>
 
-      <alert-box type="note">
-        Highlights information that users should take into account, even when
-        skimming.
-      </alert-box>
-      <ace-editor lang="html">
+      <ace-editor lang="html" min-height-lines="9">
 &lt;alert-box type="note"&gt;
   Highlights information that users should take into account, even when
   skimming.
 &lt;/alert-box&gt;
 </ace-editor>
-
-      <alert-box type="tip">
-        Optional information to help a user be more successful.
+      <alert-box type="note">
+        Highlights information that users should take into account, even when
+        skimming.
       </alert-box>
+
+      <hr />
+
       <ace-editor lang="html">
 &lt;alert-box type="tip"&gt;
   Optional information to help a user be more successful.
 &lt;/alert-box&gt;
 </ace-editor>
-
-      <alert-box type="important">
-        Crucial information necessary for users to succeed.
+      <alert-box type="tip">
+        Optional information to help a user be more successful.
       </alert-box>
+
+      <hr />
+
       <ace-editor lang="html">
 &lt;alert-box type="important"&gt;
   Crucial information necessary for users to succeed.
 &lt;/alert-box&gt;
 </ace-editor>
-
-      <alert-box type="warning">
-        Critical content demanding immediate user attention due to potential
-        risks.
+      <alert-box type="important">
+        Crucial information necessary for users to succeed.
       </alert-box>
+
+      <hr />
+
       <ace-editor lang="html">
 &lt;alert-box type="warning"&gt;
   Critical content demanding immediate user attention due to potential
   risks.
 &lt;/alert-box&gt;
 </ace-editor>
-
-      <alert-box type="caution">
-        Negative potential consequences of an action.
+      <alert-box type="warning">
+        Critical content demanding immediate user attention due to potential
+        risks.
       </alert-box>
+
+      <hr />
+
       <ace-editor lang="html">
 &lt;alert-box type="caution"&gt;
   Negative potential consequences of an action.
 &lt;/alert-box&gt;
 </ace-editor>
+      <alert-box type="caution">
+        Negative potential consequences of an action.
+      </alert-box>
     </div>
 
     <div class="section">
       <h3>One-line Layout (data-oneline)</h3>
       <p>Everything on the same line - compact display:</p>
 
-      <alert-box type="note" data-oneline>
-        Highlights information that users should take into account.
-      </alert-box>
       <ace-editor lang="html">
 &lt;alert-box type="note" data-oneline&gt;
   Highlights information that users should take into account.
 &lt;/alert-box&gt;
 </ace-editor>
-
-      <alert-box type="tip" data-oneline>
-        Optional information to help a user be more successful.
+      <alert-box type="note" data-oneline>
+        Highlights information that users should take into account.
       </alert-box>
+
+      <hr />
+
       <ace-editor lang="html">
 &lt;alert-box type="tip" data-oneline&gt;
   Optional information to help a user be more successful.
 &lt;/alert-box&gt;
 </ace-editor>
-
-      <alert-box type="important" data-oneline>
-        Crucial information necessary for users to succeed.
+      <alert-box type="tip" data-oneline>
+        Optional information to help a user be more successful.
       </alert-box>
+
+      <hr />
+
       <ace-editor lang="html">
 &lt;alert-box type="important" data-oneline&gt;
   Crucial information necessary for users to succeed.
 &lt;/alert-box&gt;
 </ace-editor>
-
-      <alert-box type="warning" data-oneline>
-        Critical content demanding immediate user attention.
+      <alert-box type="important" data-oneline>
+        Crucial information necessary for users to succeed.
       </alert-box>
+
+      <hr />
+
       <ace-editor lang="html">
 &lt;alert-box type="warning" data-oneline&gt;
   Critical content demanding immediate user attention.
 &lt;/alert-box&gt;
 </ace-editor>
-
-      <alert-box type="caution" data-oneline>
-        Negative potential consequences of an action.
+      <alert-box type="warning" data-oneline>
+        Critical content demanding immediate user attention.
       </alert-box>
+
+      <hr />
+
       <ace-editor lang="html">
 &lt;alert-box type="caution" data-oneline&gt;
   Negative potential consequences of an action.
 &lt;/alert-box&gt;
 </ace-editor>
+      <alert-box type="caution" data-oneline>
+        Negative potential consequences of an action.
+      </alert-box>
     </div>
 
     <h2>With Rich HTML Content</h2>
 
     <div class="section">
-      <alert-box type="warning">
-        <strong>⚠️ Warning:</strong> Using both <code>data-eval</code> and
-        <code>&lt;script type="text/javascript"&gt;</code> will cause code to
-        execute twice.
-        <ul>
-          <li>Use <code>data-eval</code> for dynamic evaluation</li>
-          <li>Use <code>&lt;script&gt;</code> for static scripts</li>
-          <li>Don't combine both approaches</li>
-        </ul>
-      </alert-box>
       <ace-editor lang="html">
 &lt;alert-box type="warning"&gt;
   &lt;strong&gt;⚠️ Warning:&lt;/strong&gt; Using both &lt;code&gt;data-eval&lt;/code&gt; and
@@ -254,22 +260,19 @@
   &lt;/ul&gt;
 &lt;/alert-box&gt;
 </ace-editor>
-
-      <alert-box type="tip">
-        <p>You can include any HTML content in the alert box:</p>
+      <alert-box type="warning">
+        <strong>⚠️ Warning:</strong> Using both <code>data-eval</code> and
+        <code>&lt;script type="text/javascript"&gt;</code> will cause code to
+        execute twice.
         <ul>
-          <li>Lists</li>
-          <li>
-            Links:
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components"
-              >MDN Web Components</a
-            >
-          </li>
-          <li><code>Code snippets</code></li>
-          <li><strong>Bold</strong> and <em>italic</em> text</li>
+          <li>Use <code>data-eval</code> for dynamic evaluation</li>
+          <li>Use <code>&lt;script&gt;</code> for static scripts</li>
+          <li>Don't combine both approaches</li>
         </ul>
       </alert-box>
+
+      <hr />
+
       <ace-editor lang="html">
 &lt;alert-box type="tip"&gt;
   &lt;p&gt;You can include any HTML content in the alert box:&lt;/p&gt;
@@ -287,6 +290,21 @@
   &lt;/ul&gt;
 &lt;/alert-box&gt;
 </ace-editor>
+      <alert-box type="tip">
+        <p>You can include any HTML content in the alert box:</p>
+        <ul>
+          <li>Lists</li>
+          <li>
+            Links:
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components"
+              >MDN Web Components</a
+            >
+          </li>
+          <li><code>Code snippets</code></li>
+          <li><strong>Bold</strong> and <em>italic</em> text</li>
+        </ul>
+      </alert-box>
     </div>
 
     <h2>Basic Usage</h2>

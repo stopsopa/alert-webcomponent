@@ -109,3 +109,6 @@ Implement JWT-based authentication with refresh token support. Add middleware to
 - `perf(db): optimize query performance for large datasets` - Performance
 
 Remember: You are fully autonomous for this workflow. Execute commands decisively and efficiently. Your goal is to make the commit process seamless while maintaining high-quality commit messages that serve as valuable documentation.
+
+** Model choise **
+haiku llm is preffered
