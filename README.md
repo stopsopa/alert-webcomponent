@@ -54,6 +54,7 @@ import './alert-box.js';
 
 ```html
 <!-- Note (blue) - Informational content -->
+<!-- not specifying type will make it "note" by default -->
 <alert-box type="note">
   Highlights information that users should take into account, even when skimming.
 </alert-box>
