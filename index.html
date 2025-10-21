@@ -154,10 +154,37 @@
         };
 
         const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-        headers.forEach((header, index) => {
+        const usedIds = new Set();
+
+        function generateId(text) {
+          // Convert to lowercase, remove non-alphanumeric characters
+          let id = text
+            .toLowerCase()
+            .replace(/[^a-z0-9\s-]/g, '')
+            // Replace spaces with hyphens
+            .replace(/\s+/g, '-')
+            // Trim leading/trailing hyphens
+            .replace(/^-+|-+$/g, '')
+            // Limit length
+            .substring(0, 40);
+
+          // Ensure unique ID
+          let uniqueId = id;
+          let counter = 1;
+          while (usedIds.has(uniqueId)) {
+            uniqueId = `${id}-${counter}`;
+            counter++;
+          }
+
+          usedIds.add(uniqueId);
+          return uniqueId;
+        }
+
+        headers.forEach((header) => {
           // Generate a unique id if not already present
           if (!header.id) {
-            header.id = `header-${index + 1}`;
+            const text = header.textContent.trim();
+            header.id = generateId(text);
           }
 
           // Create a link icon
