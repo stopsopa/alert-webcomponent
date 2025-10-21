@@ -52,9 +52,41 @@
     .spacer {
       height: 15px;
     }
+    .github-ribbon {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      z-index: 9999;
+    }
+    .github-ribbon a {
+      position: absolute;
+      top: 42px;
+      right: -40px;
+      transform: rotate(45deg);
+      width: 200px;
+      background: #0969da;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    .github-ribbon a:hover {
+      background: #0550ae;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
+  <div class="github-ribbon">
+    <a href="https://github.com/stopsopa/alert-webcomponent" target="_blank" rel="noopener noreferrer">Fork me on GitHub</a>
+  </div>
+
   <h1>Alert Box Web Component</h1>
 
   <p>
