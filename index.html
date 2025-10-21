@@ -119,9 +119,11 @@
     <h2>Installation</h2>
 
     <ace-editor lang="html">
-&lt;!-- Include the component from GitHub Pages --&gt;
-&lt;script src="https://stopsopa.github.io/alert-webcomponent/alert-box.js"&gt;&lt;/script&gt;
-</ace-editor>
+      <script type="ace">
+        &lt;!-- Include the component from GitHub Pages -->
+        &lt;script src="https://stopsopa.github.io/alert-webcomponent/alert-box.js">&lt;/script>
+      </script>
+    </ace-editor>
 
     <h2>Live Demos</h2>
 
@@ -129,12 +131,13 @@
       <h3>Default Layout (Multi-line)</h3>
       <p>Message appears below the label - perfect for longer content:</p>
 
-      <ace-editor lang="html" min-height-lines="9">
-&lt;alert-box type="note"&gt;
-  Highlights information that users should take into account, even when
-  skimming.
-&lt;/alert-box&gt;
-</ace-editor>
+      <ace-editor lang="html">
+        <script type="ace">
+          &lt;alert-box type="note">
+            Highlights information that users should take into account, even when skimming.
+          &lt;/alert-box>
+        </script>
+      </ace-editor>
       <alert-box type="note">
         Highlights information that users should take into account, even when
         skimming.
@@ -143,10 +146,12 @@
       <hr />
 
       <ace-editor lang="html">
-&lt;alert-box type="tip"&gt;
-  Optional information to help a user be more successful.
-&lt;/alert-box&gt;
-</ace-editor>
+        <script type="ace">
+          &lt;alert-box type="tip">
+            Optional information to help a user be more successful.
+          &lt;/alert-box>
+        </script>
+      </ace-editor>
       <alert-box type="tip">
         Optional information to help a user be more successful.
       </alert-box>
@@ -154,10 +159,12 @@
       <hr />
 
       <ace-editor lang="html">
-&lt;alert-box type="important"&gt;
-  Crucial information necessary for users to succeed.
-&lt;/alert-box&gt;
-</ace-editor>
+        <script type="ace">
+          &lt;alert-box type="important">
+            Crucial information necessary for users to succeed.
+          &lt;/alert-box>
+        </script>
+      </ace-editor>
       <alert-box type="important">
         Crucial information necessary for users to succeed.
       </alert-box>
@@ -165,11 +172,12 @@
       <hr />
 
       <ace-editor lang="html">
-&lt;alert-box type="warning"&gt;
-  Critical content demanding immediate user attention due to potential
-  risks.
-&lt;/alert-box&gt;
-</ace-editor>
+        <script type="ace">
+          &lt;alert-box type="warning">
+            Critical content demanding immediate user attention due to potential risks.
+          &lt;/alert-box>
+        </script>
+      </ace-editor>
       <alert-box type="warning">
         Critical content demanding immediate user attention due to potential
         risks.
@@ -178,10 +186,12 @@
       <hr />
 
       <ace-editor lang="html">
-&lt;alert-box type="caution"&gt;
-  Negative potential consequences of an action.
-&lt;/alert-box&gt;
-</ace-editor>
+        <script type="ace">
+          &lt;alert-box type="caution">
+            Negative potential consequences of an action.
+          &lt;/alert-box>
+        </script>
+      </ace-editor>
       <alert-box type="caution">
         Negative potential consequences of an action.
       </alert-box>
@@ -192,10 +202,12 @@
       <p>Everything on the same line - compact display:</p>
 
       <ace-editor lang="html">
-&lt;alert-box type="note" data-oneline&gt;
-  Highlights information that users should take into account.
-&lt;/alert-box&gt;
-</ace-editor>
+        <script type="ace">
+          &lt;alert-box type="note" data-oneline>
+            Highlights information that users should take into account.
+          &lt;/alert-box>
+        </script>
+      </ace-editor>
       <alert-box type="note" data-oneline>
         Highlights information that users should take into account.
       </alert-box>
@@ -203,10 +215,12 @@
       <hr />
 
       <ace-editor lang="html">
-&lt;alert-box type="tip" data-oneline&gt;
-  Optional information to help a user be more successful.
-&lt;/alert-box&gt;
-</ace-editor>
+        <script type="ace">
+          &lt;alert-box type="tip" data-oneline>
+            Optional information to help a user be more successful.
+          &lt;/alert-box>
+        </script>
+      </ace-editor>
       <alert-box type="tip" data-oneline>
         Optional information to help a user be more successful.
       </alert-box>
@@ -214,10 +228,12 @@
       <hr />
 
       <ace-editor lang="html">
-&lt;alert-box type="important" data-oneline&gt;
-  Crucial information necessary for users to succeed.
-&lt;/alert-box&gt;
-</ace-editor>
+        <script type="ace">
+          &lt;alert-box type="important" data-oneline>
+            Crucial information necessary for users to succeed.
+          &lt;/alert-box>
+        </script>
+      </ace-editor>
       <alert-box type="important" data-oneline>
         Crucial information necessary for users to succeed.
       </alert-box>
@@ -225,10 +241,12 @@
       <hr />
 
       <ace-editor lang="html">
-&lt;alert-box type="warning" data-oneline&gt;
-  Critical content demanding immediate user attention.
-&lt;/alert-box&gt;
-</ace-editor>
+        <script type="ace">
+          &lt;alert-box type="warning" data-oneline>
+            Critical content demanding immediate user attention.
+          &lt;/alert-box>
+        </script>
+      </ace-editor>
       <alert-box type="warning" data-oneline>
         Critical content demanding immediate user attention.
       </alert-box>
@@ -236,10 +254,12 @@
       <hr />
 
       <ace-editor lang="html">
-&lt;alert-box type="caution" data-oneline&gt;
-  Negative potential consequences of an action.
-&lt;/alert-box&gt;
-</ace-editor>
+        <script type="ace">
+          &lt;alert-box type="caution" data-oneline>
+            Negative potential consequences of an action.
+          &lt;/alert-box>
+        </script>
+      </ace-editor>
       <alert-box type="caution" data-oneline>
         Negative potential consequences of an action.
       </alert-box>
@@ -249,24 +269,26 @@
 
     <div class="section">
       <ace-editor lang="html">
-&lt;alert-box type="warning"&gt;
-  &lt;strong&gt;⚠️ Warning:&lt;/strong&gt; Using both &lt;code&gt;data-eval&lt;/code&gt; and
-  &lt;code&gt;&amp;lt;script type="text/javascript"&amp;gt;&lt;/code&gt; will cause code to
-  execute twice.
-  &lt;ul&gt;
-    &lt;li&gt;Use &lt;code&gt;data-eval&lt;/code&gt; for dynamic evaluation&lt;/li&gt;
-    &lt;li&gt;Use &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; for static scripts&lt;/li&gt;
-    &lt;li&gt;Don't combine both approaches&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/alert-box&gt;
-</ace-editor>
+        <script type="ace">
+          &lt;alert-box type="warning">
+            <strong>⚠️ Warning:</strong> Using both <code>data-eval</code> and
+            <code>&lt;script type="text/javascript"></code> will cause code to
+            execute twice.
+            <ul>
+              <li>Use <code>data-eval</code> for dynamic evaluation</li>
+              <li>Use <code>&lt;script></code> for static scripts</li>
+              <li>Don't combine both approaches</li>
+            </ul>
+          &lt;/alert-box>
+        </script>
+      </ace-editor>
       <alert-box type="warning">
         <strong>⚠️ Warning:</strong> Using both <code>data-eval</code> and
-        <code>&lt;script type="text/javascript"&gt;</code> will cause code to
+        <code>&lt;script type="text/javascript"></code> will cause code to
         execute twice.
         <ul>
           <li>Use <code>data-eval</code> for dynamic evaluation</li>
-          <li>Use <code>&lt;script&gt;</code> for static scripts</li>
+          <li>Use <code>&lt;script></code> for static scripts</li>
           <li>Don't combine both approaches</li>
         </ul>
       </alert-box>
@@ -274,22 +296,21 @@
       <hr />
 
       <ace-editor lang="html">
-&lt;alert-box type="tip"&gt;
-  &lt;p&gt;You can include any HTML content in the alert box:&lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Lists&lt;/li&gt;
-    &lt;li&gt;
-      Links:
-      &lt;a
-        href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components"
-        &gt;MDN Web Components&lt;/a
-      &gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;code&gt;Code snippets&lt;/code&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Bold&lt;/strong&gt; and &lt;em&gt;italic&lt;/em&gt; text&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/alert-box&gt;
-</ace-editor>
+        <script type="ace">
+          <alert-box type="tip">
+            <p>You can include any HTML content
+            in the alert box:</p>
+            <ul>
+              <li>Lists</li>
+              <li>
+                Links: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components">MDN Web Components</a>
+              </li>
+              <li><code>Code snippets</code></li>
+              <li><strong>Bold</strong> and <em>italic</em> text</li>
+            </ul>
+          </alert-box>
+        </script>
+      </ace-editor>
       <alert-box type="tip">
         <p>You can include any HTML content in the alert box:</p>
         <ul>
@@ -310,25 +331,27 @@
     <h2>Basic Usage</h2>
 
     <ace-editor lang="html">
-&lt;!-- Default multi-line layout --&gt;
-&lt;alert-box type="note"&gt;
-  This is a note callout with important information.
-&lt;/alert-box&gt;
+      <script type="ace">
+        &lt;!-- Default multi-line layout -->
+        &lt;alert-box type="note">
+          This is a note callout with important information.
+        &lt;/alert-box>
 
-&lt;!-- One-line layout --&gt;
-&lt;alert-box type="tip" data-oneline&gt;
-  Short message on one line.
-&lt;/alert-box&gt;
+        &lt;!-- One-line layout -->
+        &lt;alert-box type="tip" data-oneline>
+          Short message on one line.
+        &lt;/alert-box>
 
-&lt;!-- With HTML content --&gt;
-&lt;alert-box type="warning"&gt;
-  &lt;strong&gt;Warning:&lt;/strong&gt; This action cannot be undone.
-  &lt;ul&gt;
-    &lt;li&gt;All data will be deleted&lt;/li&gt;
-    &lt;li&gt;Backups are not available&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/alert-box&gt;
-</ace-editor>
+        &lt;!-- With HTML content -->
+        &lt;alert-box type="warning">
+          &lt;strong>Warning:&lt;/strong> This action cannot be undone.
+          <ul>
+            <li>All data will be deleted</li>
+            <li>Backups are not available</li>
+          </ul>
+        &lt;/alert-box>
+      </script>
+    </ace-editor>
 
     <h2>API Reference</h2>
 
@@ -408,8 +431,23 @@
       </li>
     </ul>
 
+    <!-- <script>
+      document.addEventListener("ace-onload", (event) => {
+        console.log("trigger");
+        // TypeScript notation showing what's available in event.detail:
+        // event.detail: {
+        //   component: HTMLElement,  // The <ace-editor> web component element
+        //   editor: AceEditor,       // The native Ace Editor instance (same as component.getEditor())
+        //   id: string               // The ID of the editor (auto-generated or user-provided)
+        // }
+        setTimeout(() => {
+          console.log("wrap", event.detail.editor);
+          event.detail.editor.setOption("wrap", true);
+        }, 2000);
+      });
+    </script> -->
     <script
-      src="https://stopsopa.github.io/ace-editor-webcomponent/ace-web-component.js"
+      src="http://localhost:3000/ace-web-component.js"
       data-main-ace="https://stopsopa.github.io/noprettier/ace/ace-builds-1.15.0/src-min-noconflict/ace.js"
     ></script>
     <script src="alert-box.js"></script>
