@@ -23,7 +23,7 @@ class AlertBox extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ['type', 'data-oneline'];
+    return ['type', 'data-oneline', 'alert'];
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -101,6 +101,10 @@ class AlertBox extends HTMLElement {
     const isOneline = this.hasAttribute('data-oneline');
     const bgColor = this.hexToRgba(config.bg, 0.5);
 
+    // Get the custom alert label if specified, otherwise use the default
+    const customAlert = this.getAttribute('alert');
+    const labelText = customAlert || config.label;
+
     if (isOneline) {
       // One-line layout: icon + label + content on same line
       this.shadowRoot.innerHTML = `
@@ -154,7 +158,7 @@ class AlertBox extends HTMLElement {
           <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
             <path d="${config.icon}"></path>
           </svg>
-          <div class="label">${config.label}</div>
+          <div class="label">${labelText}</div>
           <div class="content">
             <slot></slot>
           </div>
@@ -216,7 +220,7 @@ class AlertBox extends HTMLElement {
             <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
               <path d="${config.icon}"></path>
             </svg>
-            <div class="label">${config.label}</div>
+            <div class="label">${labelText}</div>
           </div>
           <div class="content">
             <slot></slot>

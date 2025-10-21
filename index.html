@@ -281,6 +281,35 @@
       </alert-box>
     </div>
 
+    <h2>Custom Alert Label</h2>
+    <p>Override the default label using the <code>alert</code> attribute:</p>
+
+    <div class="section">
+      <ace-editor lang="html">
+        <script type="ace">
+          &lt;!-- Multi-line layout with custom label -->
+          &lt;alert-box type="note" alert="Documentation">
+            Override the default label to suit your specific context.
+          &lt;/alert-box>
+
+          &lt;!-- One-line layout with custom label -->
+          &lt;alert-box type="warning" data-oneline alert="Security Alert">
+            A custom label that precisely describes the nature of the alert.
+          &lt;/alert-box>
+        </script>
+      </ace-editor>
+
+      <alert-box type="note" alert="Documentation">
+        Override the default label to suit your specific context.
+      </alert-box>
+
+      <hr />
+
+      <alert-box type="warning" data-oneline alert="Security Alert">
+        A custom label that precisely describes the nature of the alert.
+      </alert-box>
+    </div>
+
     <h2>With Rich HTML Content</h2>
 
     <div class="section">
@@ -380,6 +409,10 @@
       <li>
         <code>data-oneline</code> (boolean): Display in compact one-line mode.
         Default: false (multi-line layout)
+      </li>
+      <li>
+        <code>alert</code> (string): Custom override for the default label.
+        When specified, replaces the standard type label. Default: uses type's default label
       </li>
     </ul>
 
