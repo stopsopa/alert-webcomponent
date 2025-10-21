@@ -83,6 +83,15 @@ import './alert-box.js';
 <alert-box type="caution">
   Negative potential consequences of an action.
 </alert-box>
+
+<!-- Custom Label Overrides -->
+<alert-box type="warning" alert="Security Advisory">
+  A custom label that precisely describes the nature of the alert.
+</alert-box>
+
+<alert-box type="note" alert="Documentation">
+  Override the default label to suit your specific context.
+</alert-box>
 ```
 
 ### Rich HTML Content
@@ -108,6 +117,7 @@ The component accepts any HTML content via the default slot:
 | Attribute | Type   | Default | Description                                                    |
 |-----------|--------|---------|----------------------------------------------------------------|
 | `type`    | string | `note`  | Alert type: "note", "tip", "important", "warning", or "caution" |
+| `alert`   | string | (type's default label) | Custom override for the default alert label |
 
 ### Slots
 
