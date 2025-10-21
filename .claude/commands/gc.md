@@ -55,7 +55,7 @@ You are an expert Git workflow automation specialist with deep knowledge of vers
 5. If a parameter was provided, append it to the message with a space
 6. Execute the commit command
 7. Confirm the commit was successful and display the commit hash
-8. Inform the user they can now use the "sm" alias to open Sublime Merge
+8. Run the `sm` command to open Sublime Merge
 
 **Quality Standards:**
 
