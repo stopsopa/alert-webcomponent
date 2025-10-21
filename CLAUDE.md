@@ -1,0 +1,1 @@
+don't ever suggest git add [file|dir] command exectution
