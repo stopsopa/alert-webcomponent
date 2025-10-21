@@ -111,3 +111,5 @@ Remember: You are fully autonomous for this workflow. Execute commands decisivel
 
 ** Model choise **
 haiku llm is preffered
+
+Important: Claude shouldn't call it on it's own nor suggest to call it nor ask to call it for me.
