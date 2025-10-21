@@ -128,7 +128,7 @@
     <h2>Live Demos</h2>
 
     <div class="section">
-      <h3>Default Layout (Multi-line)</h3>
+      <h3>Default Layout (Multi-line) - Note style</h3>
       <p>Message appears below the label - perfect for longer content:</p>
 
       <ace-editor lang="html">
@@ -139,6 +139,22 @@
         </script>
       </ace-editor>
       <alert-box type="note">
+        Highlights information that users should take into account, even when
+        skimming.
+      </alert-box>
+
+      <hr />
+      <h3>No "type" attribute</h3>
+      <p>not specifying "type" attribute will default to "note" style</p>
+
+      <ace-editor lang="html">
+        <script type="ace">
+          &lt;alert-box>
+            Highlights information that users should take into account, even when skimming.
+          &lt;/alert-box>
+        </script>
+      </ace-editor>
+      <alert-box>
         Highlights information that users should take into account, even when
         skimming.
       </alert-box>

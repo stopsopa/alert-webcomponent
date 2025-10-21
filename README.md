@@ -1,3 +1,8 @@
+
+# Documentation and Demo page
+
+https://stopsopa.github.io/alert-webcomponent/
+
 # Alert Box Web Component
 
 A lightweight, reusable alert/callout web component with GitHub-style alerts. Built with vanilla JavaScript and the Web Components API.
