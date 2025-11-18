@@ -155,7 +155,7 @@ document.body.appendChild(alert);
 
 ## Styling
 
-The component uses Shadow DOM for style encapsulation. The default styles match GitHub's alert design.
+The component uses Shadow DOM for style encapsulation. The default styles match [GitHub's alert](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) design.
 
 ### Custom Spacing
 
