@@ -2,18 +2,8 @@
 
 // https://stopsopa.github.io/viewer.html?file=xx.cjs
 // edit: https://github.com/stopsopa/stopsopa.github.io/blob/master/xx.cjs
-// 🚀 -
-// ✅ -
-// ⚙️  -
-// 🗑️  -
-// 🛑 -
-// to call other xx commands from inside any xx command use:
-//    shopt -s expand_aliases && source ~/.bashrc
-// after that just do:
-//   xx <command_name>
-// to override confirm: true
-//   XXCONFIRM=false xx <command_name>
 const S = "\\\\";
+
 
 module.exports = (setup) => {
   return {
