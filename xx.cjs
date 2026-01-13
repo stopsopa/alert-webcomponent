@@ -23,7 +23,7 @@ cat <<EEE
   🐙 GitHub: $(git ls-remote --get-url origin | awk '{\$1=\$1};1' | tr -d '\\n' | sed -E 's/git@github\\.com:([^/]+)\\/(.+)\\.git/https:\\/\\/github.com\\/\\1\\/\\2/g')
 
   server:
-    http://\${LOCAL_HOSTS}:\${NODE_API_PORT}
+    http://\${HOST}:\${PORT}
 
 EEE
 
