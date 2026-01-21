@@ -19,15 +19,26 @@ A lightweight, reusable alert/callout web component with GitHub-style alerts. Bu
 
 ## Installation
 
-### Option 1: Local File
+### Download File
 
 Download `alert-box.js` and include it in your HTML:
+
+```sh
+
+wget https://raw.githubusercontent.com/stopsopa/alert-webcomponent/refs/heads/main/alert-box.js
+
+```
+
+and then there two standard options to load:
+
+#### 1) Load directly into HTML
 
 ```html
 <script src="path/to/alert-box.js"></script>
 ```
 
-### Option 2: ES Module
+
+#### 2) ES Module
 
 ```javascript
 import './alert-box.js';
