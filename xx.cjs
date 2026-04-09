@@ -32,6 +32,14 @@ EEE
       source: true,
       confirm: false,
     },
+    [`npm install`]: {
+      command: `
+set -e
+set -x      
+/bin/bash bash/swap-files-v2.sh package.json package.dev.json -- npm install
+`,
+      confirm: false,
+    },
     [`browser`]: {
       command: `
 set -e
