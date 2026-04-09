@@ -1,28 +1,12 @@
 {
   "name": "ace-editor-webcomponent",
   "version": "1.0.0",
-  "description": "Comprehensive learning path for Web Components, culminating in an Ace Editor web component",
   "type": "module",
-  "main": "alert-box.js",
-  "types": "alert-box.d.ts",
-  "exports": {
-    ".": {
-      "types": "./alert-box.d.ts",
-      "import": "./alert-box.js",
-      "default": "./alert-box.js"
-    },
-    "./react": {
-      "types": "./react.d.ts",
-      "import": "./react.js",
-      "default": "./react.js"
-    }
-  },
-  "files": ["alert-box.js", "alert-box.d.ts", "react.js", "react.d.ts"],
   "scripts": {
     "start": "node --env-file=.env server.js",
     "dev": "node --env-file=.env server.js"
   },
-  "keywords": ["web-components", "custom-elements", "ace-editor", "learning", "tutorial"],
+
   "author": "Szymon Dzialowski",
   "license": "MIT",
   "dependencies": {
@@ -33,9 +17,5 @@
   "devDependencies": {
     "semantic-release": "^21.0.0",
     "conventional-changelog-conventionalcommits": "^6.1.0"
-  },
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
   }
 }

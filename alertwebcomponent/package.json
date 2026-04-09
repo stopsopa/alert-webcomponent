@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "ace-editor-webcomponent": "^1.0.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
