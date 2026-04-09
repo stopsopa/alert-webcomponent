@@ -233,3 +233,7 @@ MIT License - Feel free to use in your projects!
 - [MDN: Using custom elements](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements)
 - [MDN: Using shadow DOM](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM)
 - [GitHub Primer Design System](https://primer.style/design/foundations/color)
+
+# Dev notes
+Making web componet React ready:
+https://github.com/stopsopa/alert-webcomponent/commit/619b2dd588365bc67d6c353a4473568e56ab8b99
