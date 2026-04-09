@@ -4,6 +4,10 @@
   "description": "Comprehensive learning path for Web Components, culminating in an Ace Editor web component",
   "type": "module",
   "homepage": "https://github.com/stopsopa/alert-webcomponent",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stopsopa/alert-webcomponent.git"
+  },
   "main": "alert-box.js",
   "types": "alert-box.d.ts",
   "exports": {
