@@ -1,0 +1,42 @@
+name: Publish
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches:
+      - "**"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+jobs:
+  npm:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies from package.dev.json
+        run: /bin/bash bash/swap-files-v2.sh package.json package.dev.json -- npm install
+
+      - name: Install semantic-release tools
+        run: /bin/bash bash/swap-files-v2.sh package.json package.dev.json -- npm install semantic-release conventional-changelog-conventionalcommits
+
+      - name: npm pack
+        run: npm pack
+
+      - name: Release
+        if: github.ref == 'refs/heads/main'
+        run: ./node_modules/.bin/semantic-release --debug

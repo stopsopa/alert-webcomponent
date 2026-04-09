@@ -1,8 +1,9 @@
 {
   "name": "ace-editor-webcomponent",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Comprehensive learning path for Web Components, culminating in an Ace Editor web component",
   "type": "module",
+  "homepage": "https://github.com/stopsopa/alert-webcomponent",
   "main": "alert-box.js",
   "types": "alert-box.d.ts",
   "exports": {
