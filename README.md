@@ -1,7 +1,35 @@
 
-# npm
+# Install
 
 https://www.npmjs.com/package/ace-editor-webcomponent
+
+To install:
+
+```
+
+yarn add ace-editor-webcomponent
+npm install ace-editor-webcomponent
+
+```
+
+# Use with React
+
+```
+
+import AlertBox from "ace-editor-webcomponent/react";
+
+function App() {
+  return (
+    <>
+      <AlertBox type="note">This is the React wrapped component.</AlertBox>
+    </>
+  );
+}
+
+export default App;
+
+
+```
 
 # Documentation and Demo page
 
@@ -241,3 +269,6 @@ MIT License - Feel free to use in your projects!
 # Dev notes
 Making web componet React ready:
 https://github.com/stopsopa/alert-webcomponent/commit/619b2dd588365bc67d6c353a4473568e56ab8b99
+
+Preparing for releasing to npm from GitHub Actions:
+https://github.com/stopsopa/alert-webcomponent/commit/19a95fd97412cbd162b26fab106bd41006be9cf8
