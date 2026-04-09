@@ -5,7 +5,7 @@ https://www.npmjs.com/package/ace-editor-webcomponent
 
 To install:
 
-```
+```sh
 
 yarn add ace-editor-webcomponent
 npm install ace-editor-webcomponent
@@ -14,7 +14,7 @@ npm install ace-editor-webcomponent
 
 # Use with React
 
-```
+```jsx
 
 import AlertBox from "ace-editor-webcomponent/react";
 
@@ -72,7 +72,7 @@ and then there two standard options to load:
 
 #### 2) ES Module
 
-```javascript
+```js
 import './alert-box.js';
 ```
 
