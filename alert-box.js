@@ -231,5 +231,8 @@ class AlertBox extends HTMLElement {
   }
 }
 
-// Register the custom element
-customElements.define('alert-box', AlertBox);
+// Register the custom element if it hasn't been defined yet
+if (!customElements.get('alert-box')) {
+  customElements.define('alert-box', AlertBox);
+}
+

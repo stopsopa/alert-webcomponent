@@ -3,7 +3,26 @@
   "version": "1.0.0",
   "description": "Comprehensive learning path for Web Components, culminating in an Ace Editor web component",
   "type": "module",
-  "main": "server.js",
+  "main": "alert-box.js",
+  "types": "alert-box.d.ts",
+  "exports": {
+    ".": {
+      "types": "./alert-box.d.ts",
+      "import": "./alert-box.js",
+      "default": "./alert-box.js"
+    },
+    "./react": {
+      "types": "./react.d.ts",
+      "import": "./react.js",
+      "default": "./react.js"
+    }
+  },
+  "files": [
+    "alert-box.js",
+    "alert-box.d.ts",
+    "react.js",
+    "react.d.ts"
+  ],
   "scripts": {
     "start": "node --env-file=.env server.js",
     "dev": "node --env-file=.env server.js"
@@ -21,5 +40,9 @@
     "express": "^4.18.2",
     "cookie-parser": "^1.4.6",
     "serve-index": "^1.9.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   }
 }
